@@ -22,6 +22,24 @@
         </td>
     </tr>
     </tbody></table>
+
+    <script>
+      function showAbstract() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Abstractaaa"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Abstractbbb"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>      
     
     <p align="justify">I am a Postdoctoral Researcher in the Department of 
       Computer Science at <a href="https://umich.edu/">University of Michigan, Ann Arbor</a>. 
@@ -46,13 +64,59 @@
     
     <ul>
       <li>
-        <p align="left">
-        Masking-augmented Collaborative Domain Congregation for 
+        <!-- Masking-augmented Collaborative Domain Congregation for 
           Multi-target Domain Adaptation in Semantic Segmentation<br>
         <strong>Fei Pan</strong>, Dong He, Xu Yin, Chengshuang Zhang, Munchurl Kim.<br>
-        Under Reivew, 2023 <br>
-        </p>
+        Under Reivew, 2023 <br> -->
+        <div class="read-more-container">
+          <div class="container">
+            <p>
+              Masking-augmented Collaborative Domain Congregation for 
+              Multi-target Domain Adaptation in Semantic Segmentation<br>
+              <strong>Fei Pan</strong>, Dong He, Xu Yin, Chengshuang Zhang, Munchurl Kim.<br>
+              Under Reivew, 2023<br>
+              <span class="read-more-text">
+                This paper addresses the challenges in multi-target domain adaptive segmentation 
+                which aims at learning a single model that adapts to multiple diverse target domains. 
+                Existing methods show limited performance as they only consider the difference in visual appearance (style) 
+                while ignoring the (contextual) variations among multiple target domains. 
+                In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
+                to handle the style gap and contextual gap altogether. 
+                The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
+                Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
+                intermediate domains among target domains. To further strengthen contextual alignment, 
+                our MCMC applies a masking-based self-supervised augmentation consistency that enforces the model's understanding of 
+                diverse contexts together.
+                MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
+                Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
+                superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches. <br>
+              </span>
+              <span class="read-more-btn">Abstract</span>
+            </p>
+            
+          </div>
+        </div>
+
+        
+        <!-- <span>
+          This paper addresses the challenges in multi-target domain adaptive segmentation 
+            which aims at learning a single model that adapts to multiple diverse target domains. 
+          Existing methods show limited performance as they only consider the difference in visual appearance (\textit{style}) 
+            while ignoring the \textit{contextual} variations among multiple target domains. 
+          In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
+            to handle the \textit{style gap} and \textit{contextual gap} altogether. 
+          The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
+          Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
+            intermediate domains among target domains. To further strengthen contextual alignment, 
+            our MCMC applies a \textit{masking}-based self-supervised augmentation consistency that enforces the model's understanding of 
+            diverse contexts together.
+           MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
+           Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
+           superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches.
+        </span>
+        <button onclick="showAbstract()" id="myBtn">Abstract</button> -->
       </li>
+      
       <li>
         <p align="left">
         Fine-grained Background Representation for Weakly Supervised Semantic Segmentation<br>
@@ -122,6 +186,7 @@
 
     </ul>
   
+  <script src="script.js"></script>
   <p align="right">
     <small><i>updated by 2023</i></small><br>
   </p>

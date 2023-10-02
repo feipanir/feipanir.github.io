@@ -268,3 +268,27 @@ footer {
     color:#444;
   }
 }
+
+/* Read more Abstract */
+
+.read-more-container{
+  display: flex;
+  flex-direction: column;
+  color: #595959;
+  gap: 1rem;
+  text-align: justify;
+}
+
+
+.read-more-btn{
+  color: #595959;
+}
+
+.read-more-text{
+  display: none;
+}
+
+.read-more-text--show{
+  display: inline;
+  color:#576c91;
+}
