@@ -1,8 +1,6 @@
 # Theme
 
-[Demo the Theme](https://orderedlist.com/minimal/)
-
-This HTML uses styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
+This repository is [my personal webpage](https://feipan.info). The HTML uses styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/). This is the [demo](https://orderedlist.com/minimal/) for using the theme.
 
 # License
 
