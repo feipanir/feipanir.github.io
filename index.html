@@ -21,25 +21,7 @@
           <a href="https://scholar.google.com/citations?hl=en&user=VGE3DlYAAAAJ"> Google Scholar</a>
         </td>
     </tr>
-    </tbody></table>
-
-    <script>
-      function showAbstract() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
-      
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Abstractaaa"; 
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Abstractbbb"; 
-          moreText.style.display = "inline";
-        }
-      }
-      </script>      
+    </tbody></table>    
     
     <p align="justify">I am a Postdoctoral Researcher in the Department of 
       Computer Science at <a href="https://umich.edu/">University of Michigan, Ann Arbor</a>. 
@@ -62,135 +44,484 @@
     <h3 id="publications">Publications</h3>
     <!-- <h4 id="2023">2023</h4> -->
     
-    <ul>
-      <li>
-        <!-- Masking-augmented Collaborative Domain Congregation for 
-          Multi-target Domain Adaptation in Semantic Segmentation<br>
-        <strong>Fei Pan</strong>, Dong He, Xu Yin, Chengshuang Zhang, Munchurl Kim.<br>
-        Under Reivew, 2023 <br> -->
-        <div class="read-more-container">
+    <div class="read-more-container">
+      <ul>
+        <!-- Every paper starts with <li> and ends with </li> -->
+        <!-- Paper boundary -->
+        <li>
+            <div class="container">
+              <p>
+                Masking-augmented Collaborative Domain Congregation for 
+                Multi-target Domain Adaptation in Semantic Segmentation.<br>
+                <strong>Fei Pan</strong>, Dong He, Xu Yin, Chengshuang Zhang, Munchurl Kim.<br>
+                Under Reivew, 2023.<br>
+                <span class="read-more-text">
+                  <b>Abstract</b> <br>
+                  This paper addresses the challenges in multi-target domain adaptive segmentation 
+                  which aims at learning a single model that adapts to multiple diverse target domains. 
+                  Existing methods show limited performance as they only consider the difference in visual appearance (style) 
+                  while ignoring the (contextual) variations among multiple target domains. 
+                  In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
+                  to handle the style gap and contextual gap altogether. 
+                  The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
+                  Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
+                  intermediate domains among target domains. To further strengthen contextual alignment, 
+                  our MCMC applies a masking-based self-supervised augmentation consistency that enforces the model's understanding of 
+                  diverse contexts together.
+                  MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
+                  Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
+                  superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches. 
+                  <br>
+                  <br>
+                  <b>Key Words:</b> Multi-target Domain Adaptation, Semantic Segmentation, Masking Consistency, Self-supervised Data Augmentation.
+                </span>
+                <span class="read-more-btn">Read More</span>
+              </p>
+              
+            </div>
+        </li>
+        
+        <!-- Paper boundary -->
+        <li>
+            <div class="container">
+              <p>
+                Fine-grained Background Representation for Weakly Supervised Semantic Segmentation.<br>
+                Xu Yin, Woobin Im, Dongbo Min, Yuchi Huo, <strong>Fei Pan</strong>, Sungeui Yoon.<br>
+                Under Reivew, 2023.<br>
+                <span class="read-more-text">
+                  <b>Abstract</b> 
+                  <br>
+                    Generating reliable pseudo masks from image-level labels is challenging in the weakly 
+                    supervised semantic segmentation (WSSS) task due to the lack of spatial information. 
+                    Prevalent class activation map (CAM)-based solutions are challenged to discriminate 
+                    the foreground (FG) objects from the suspicious background (BG) pixels (a.k.a. co-occurring) 
+                    and learn the integral object regions. 
+                    This paper proposes a simple fine-grained background representation (FBR) 
+                    method to discover and represent diverse BG semantics and address the co-occurring problems. 
+                    We abandon the use of the class prototype or pixel-level features for BG representation. 
+                    Instead, we develop a novel primitive, negative region of interest (NROI), 
+                    to capture the fine-grained BG semantic information and conduct the pixel-to-NROI 
+                    contrast to distinguish the confusing BG pixels. We also present an active sampling 
+                    strategy to mine the FG negatives on-the-fly, enabling efficient pixel-to-pixel intra-foreground 
+                    contrastive learning to activate the entire object region. 
+                    Thanks to the simplicity of design and convenience in use, 
+                    our FBR is architecture-agnostic and can be seamlessly plugged into various WSSS models. 
+                    Experimental results on Pascal Voc 2012 and MS COCO 2014 show that FBR exceeds existing studies, 
+                    obtaining new state-of-art performances in different settings.
+                  <br>
+                  <br>
+                  <b>Key Words:</b> 
+                    Representation Learning, Class Activation Map, Semantic Segmentation.
+                </span>
+                <span class="read-more-btn">Read More</span>
+              </p>
+            </div>
+        </li>
+        
+        <!-- Paper boundary -->
+        <li>
           <div class="container">
             <p>
-              Masking-augmented Collaborative Domain Congregation for 
-              Multi-target Domain Adaptation in Semantic Segmentation<br>
-              <strong>Fei Pan</strong>, Dong He, Xu Yin, Chengshuang Zhang, Munchurl Kim.<br>
-              Under Reivew, 2023<br>
+              MoDA: Leveraging Motion Prior from Videos for Advancing Unsupervised Domain 
+              Adaptation in Semantic Segmentation.<br>
+              <strong>Fei Pan</strong>*, Xu Yin*, Seokju Lee, Sungeui Yoon, In So Kweon.<br>
+              Under Review, 2023.<br>
               <span class="read-more-text">
-                This paper addresses the challenges in multi-target domain adaptive segmentation 
-                which aims at learning a single model that adapts to multiple diverse target domains. 
-                Existing methods show limited performance as they only consider the difference in visual appearance (style) 
-                while ignoring the (contextual) variations among multiple target domains. 
-                In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
-                to handle the style gap and contextual gap altogether. 
-                The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
-                Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
-                intermediate domains among target domains. To further strengthen contextual alignment, 
-                our MCMC applies a masking-based self-supervised augmentation consistency that enforces the model's understanding of 
-                diverse contexts together.
-                MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
-                Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
-                superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches. <br>
+                <b>Abstract</b> 
+                <br>
+                  Unsupervised domain adaptation (UDA) is an effective approach to handle the 
+                  lack of annotations in the target domain for the semantic segmentation task. 
+                  In this work, we consider a more practical UDA setting where the target domain 
+                  contains sequential frames of the unlabeled videos which are easy to collect
+                  in practice. A recent study suggests self-supervised learning of the object motion 
+                  from unlabeled videos with geometric constraints. We design a motion-guided domain 
+                  adaptive semantic segmentation framework (MoDA), that utilizes self-supervised object 
+                  motion to learn effective representations in the target domain. MoDA differs from 
+                  previous methods that use temporal consistency regularization for the target domain frames. 
+                  Instead, MoDA deals separately with the domain alignment on the foreground and 
+                  background categories using different strategies. Specifically, MoDA contains foreground 
+                  object discovery and foreground semantic mining to align the foreground domain gaps by 
+                  taking the instance-level guidance from the object motion. 
+                  Additionally, MoDA includes background adversarial training which contains a background 
+                  category-specific discriminator to handle the background domain gaps. 
+                  Experimental results on multiple benchmarks highlight the effectiveness of 
+                  MoDA against existing approaches in the domain adaptive image segmentation and 
+                  domain adaptive video segmentation. Moreover, MoDA is versatile and can be used in 
+                  conjunction with existing state-of-the-art approaches to further improve performance.  
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Unsupervised domain adaptation, Semantic Segmentation, Domain Adaptive Video Segmentation, Geometric Learning.
               </span>
-              <span class="read-more-btn">Abstract</span>
+              <span class="read-more-btn">Read More</span>
             </p>
-            
           </div>
-        </div>
+        </li>
 
-        
-        <!-- <span>
-          This paper addresses the challenges in multi-target domain adaptive segmentation 
-            which aims at learning a single model that adapts to multiple diverse target domains. 
-          Existing methods show limited performance as they only consider the difference in visual appearance (\textit{style}) 
-            while ignoring the \textit{contextual} variations among multiple target domains. 
-          In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
-            to handle the \textit{style gap} and \textit{contextual gap} altogether. 
-          The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
-          Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
-            intermediate domains among target domains. To further strengthen contextual alignment, 
-            our MCMC applies a \textit{masking}-based self-supervised augmentation consistency that enforces the model's understanding of 
-            diverse contexts together.
-           MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
-           Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
-           superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches.
-        </span>
-        <button onclick="showAbstract()" id="myBtn">Abstract</button> -->
-      </li>
-      
-      <li>
-        <p align="left">
-        Fine-grained Background Representation for Weakly Supervised Semantic Segmentation<br>
-        Xu Yin, Woobin Im, Dongbo Min, Yuchi Huo, <strong>Fei Pan</strong>, Sungeui Yoon.<br>
-        Under Reivew, 2023 <br>
-        </p>
-      </li>
-      <li>
-        <p align="left">
-          MoDA: Leveraging Motion Prior from Videos for Advancing Unsupervised Domain 
-            Adaptation in Semantic Segmentation<br>
-          <strong>Fei Pan</strong>*, Xu Yin*, Seokju Lee, Sungeui Yoon, In So Kweon<br>
-          Under Review, 2023<br>
-        </p>
-      </li>
-      <li>
-        <p align="left">
-          ML-BPM: Multi-teacher Learning with Bidirectional Photometric Mixing for Open 
-            Compound Domain Adaptation in Semantic Segmentation<br>
-          <strong>Fei Pan</strong>, Sungsu Hur, Seokju Lee, Junsik Kim, In So Kweon<br>
-          European Conference on Computer Vision (ECCV), 2022
-        </p>
-      </li>
-      <li>
-        <p align="left">
-          Labeling Where Adapting Fails: Cross-Domain Semantic Segmentation with Point 
-            Supervised via Active Learning<br>
-          <strong>Fei Pan</strong>, Francois Rameau, Junsik Kim, In So Kweon<br>
-          arXiv, 2022
-        </p>
-      </li>
-      <li>
-        <p>
-          Attentive and Contrastive Learning for Joint Depth and Motion Field Estimation<br>
-          Seokju Lee, Francois Rameau, <strong>Fei Pan</strong>, In So Kweon<br>
-          International Conference on Computer Vision (ICCV), 2021<br>
-        </p>
-      </li>
-      <li>
-        <p>
-          Two-phase Pseudo Label Densification for Self-training based Domain Adaptation<br>
-          Inkyu Shin, Sanghyun Woo, <strong>Fei Pan</strong>, In So Kweon<br>
-          European Conference on Computer Vision (ECCV), 2020<br>
-        </p>
-      </li>
-      <li>
-        <p>
-          Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-supervision<br>
-          <strong>Fei Pan</strong>, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon<br>
-          IEEE Computer Vision and Pattern Recognition Conference (CVPR), 2020<br>
-        </p>
-      </li>
-      <li>
-        <p>
-          Variational Prototyping-Encoder: One-shot Learning with Prototypical Images<br>
-          Junsik Kim, Tae-hyun Oh, Seokju Lee, <strong>Fei Pan</strong>, In So Kweon<br>
-          IEEE Computer Vision and Pattern Recognition Conference (CVPR), 2019<br>
-        </p>
-      </li>
-      <li>
-        <p>
-          Driver Drowsiness Detection System Based on Feature Representation Learning Using Various Deep Networks<br>
-          Sanghyuk Park, <strong>Fei Pan</strong>, Sunghun Kang, Chang D. Yoo<br>
-          Asian Conference on Computer Vision Workshops (ACCVW), 2016<br>
-        </p>
-      </li>
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              CCTV-Calib: a Toolbox to Calibrate Surveillance Cameras Around the Globe.<br>
+              Francois Rameau, Jaesung Choe, <strong>Fei Pan</strong>, Seokju Lee, In So Kweon.<br>
+              Machine Vision and Applications, 2023.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                In this paper, we propose CCTV-Calib, a user-friendly toolbox to calibrate 
+                traffic cameras using satellite views.
+                Specifically, CCTV-Calib can estimate the intrinsic and extrinsic
+                parameters as well as the GPS location of one or multiple CCTV
+                cameras in a few clicks. Previous surveillance camera calibration
+                strategies rely on various assumptions on the camera parameters
+                (e.g., absence of radial distortion), location, or detected objects
+                in the scene. In contrast, our system is able to calibrate both
+                perspective and fisheye cameras without restrictive structural
+                or semantic assumptions. In fact, only a few correspondences
+                between an image and its satellite view are sufficient to accurately
+                calibrate a camera. Such kind of camera geo-localization and 
+                calibration via satellite imaging has yet attracted narrow attention.
+                As a result, most existing techniques naively rely on manually
+                clicked keypoint correspondences – between the satellite view and
+                the CCTV image, leading to poor accuracy and repeatability. To
+                cope with these limitations and to ease the calibration process, we
+                propose an automated keypoints matching stage and a refinement
+                process improving the accuracy of the computed parameters. Our
+                toolbox has been qualitatively and quantitatively evaluated using
+                synthetic and real data from various traffic cameras around the
+                globe. We made these unique datasets freely available to the
+                community. Finally, in order to illustrate the relevance of our
+                calibration strategy, we demonstrate its applicability to 3D vehicle
+                geolocalization. Our novel calibration pipeline is integrated in a
+                easy to use GUI and is freely available via the following link:
+                https://github.com/rameau-fr/CCTV-Calib.  
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Camera Calibration, CCTV, Vehicle Geolocalization.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
 
-    </ul>
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              ML-BPM: Multi-teacher Learning with Bidirectional Photometric Mixing for Open 
+              Compound Domain Adaptation in Semantic Segmentation.<br>
+              <strong>Fei Pan</strong>, Sungsu Hur, Seokju Lee, Junsik Kim, In So Kweon.<br>
+              European Conference on Computer Vision (ECCV), 2022.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Open compound domain adaptation (OCDA) considers the target domain as the 
+                compound of multiple unknown homogeneous subdomains. 
+                The goal of OCDA is to minimize the domain gap between the labeled source domain 
+                and the unlabeled compound target domain, which benefits the model generalization 
+                to the unseen domains. Current OCDA for semantic segmentation methods adopt manual 
+                domain separation and employ a single model to simultaneously adapt to all the 
+                target subdomains. However, adapting to a target subdomain might hinder the model 
+                from adapting to other dissimilar target subdomains, which leads to limited performance. 
+                In this work, we introduce a multi-teacher framework with bidirectional photometric 
+                mixing to separately adapt to every target subdomain. First, we present an automatic 
+                domain separation to find the optimal number of subdomains. On this basis, we propose 
+                a multi-teacher framework in which each teacher model uses bidirectional photometric 
+                mixing to adapt to one target subdomain. Furthermore, we conduct an adaptive distillation 
+                to learn a student model and apply consistency regularization to improve the student 
+                generalization. Experimental results on benchmark datasets show the efficacy of the 
+                proposed approach for both the compound domain and the open domains against existing 
+                state-of-the-art approaches.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Domain Adaptation, Open Compound Domain Adaptation, Semantic Segmentation, Multi-teacher Distillation.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Labeling Where Adapting Fails: Cross-Domain Semantic Segmentation with Point 
+              Supervised via Active Learning.<br>
+              <strong>Fei Pan</strong>, Francois Rameau, Junsik Kim, In So Kweon.<br>
+              arXiv, 2022.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Training models dedicated to semantic segmentation requires a large amount 
+                of pixel-wise annotated data. Due to their costly nature, these annotations
+                might not be available for the task at hand. To alleviate this problem, 
+                unsupervised domain adaptation approaches aim at aligning the feature 
+                distributions between the labeled source and the unlabeled target data. 
+                While these strategies lead to noticeable improvements, their effectiveness 
+                remains limited. To guide the domain adaptation task more efficiently, previous 
+                works attempted to include human interactions in this process under the form of 
+                sparse single-pixel annotations in the target data. In this work, we propose a 
+                new domain adaptation framework for semantic segmentation with annotated points 
+                via active selection. First, we conduct an unsupervised domain adaptation of the 
+                model; from this adaptation, we use an entropy-based uncertainty measurement for 
+                target points selection. Finally, to minimize the domain gap, we propose a domain 
+                adaptation framework utilizing these target points annotated by human annotators. 
+                Experimental results on benchmark datasets show the effectiveness of our methods 
+                against existing unsupervised domain adaptation approaches. The propose pipeline 
+                is generic and can be included as an extra module to existing domain adaptation strategies.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Active Learning, Unsupervised Domain Adaptation, Semantic Segmentation.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Attentive and Contrastive Learning for Joint Depth and Motion Field Estimation.<br>
+              Seokju Lee, Francois Rameau, <strong>Fei Pan</strong>, In So Kweon.<br>
+              International Conference on Computer Vision (ICCV), 2021.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Estimating the motion of the camera together with the 3D
+                structure of the scene from a monocular vision system is a
+                complex task that often relies on the so-called scene rigidity
+                assumption. When observing a dynamic environment, this
+                assumption is violated which leads to an ambiguity between
+                the ego-motion of the camera and the motion of the objects.
+                To solve this problem, we present a self-supervised learning 
+                framework for 3D object motion field estimation from
+                monocular videos. Our contributions are two-fold. First, we
+                propose a two-stage projection pipeline to explicitly disentangle 
+                the camera ego-motion and the object motions with
+                dynamics attention module, called DAM. Specifically, we
+                design an integrated motion model that estimates the motion 
+                of the camera and object in the first and second warping stages, 
+                respectively, controlled by the attention module
+                through a shared motion encoder. Second, we propose an
+                object motion field estimation through contrastive sample
+                consensus, called CSAC, taking advantage of weak semantic
+                prior (bounding box from an object detector) and geometric 
+                constraints (each object respects the rigid body motion
+                model). Experiments on KITTI, Cityscapes, and Waymo
+                Open Dataset demonstrate the relevance of our approach
+                and show that our method outperforms state-of-the-art algorithms 
+                for the tasks of self-supervised monocular depth
+                estimation, object motion segmentation, monocular scene
+                flow estimation, and visual odometry.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Motion Field Estimation, Monocular Depth Prediction, Geometric Learning.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Two-phase Pseudo Label Densification for Self-training based Domain Adaptation.<br>
+              Inkyu Shin, Sanghyun Woo, <strong>Fei Pan</strong>, In So Kweon.<br>
+              European Conference on Computer Vision (ECCV), 2020.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Recently, deep self-training approaches emerged as a powerful solution to 
+                the unsupervised domain adaptation. The self-training scheme involves 
+                iterative processing of target data; it generates target pseudo labels 
+                and retrains the network. However, since only the confident predictions 
+                are taken as pseudo labels, existing self-training approaches inevitably 
+                produce sparse pseudo labels in practice. We see this is critical because 
+                the resulting insufficient training-signals lead to a suboptimal, 
+                error-prone model. In order to tackle this problem, we propose a novel 
+                Two-phase Pseudo Label Densification framework, referred to as TPLD. 
+                In the first phase, we use sliding window voting to propagate the confident 
+                predictions, utilizing intrinsic spatial-correlations in the images. 
+                In the second phase, we perform a confidence-based easy-hard classification. 
+                For the easy samples, we now employ their full pseudo labels. 
+                For the hard ones, we instead adopt adversarial learning to enforce hard-to-easy 
+                feature alignment. To ease the training process and avoid noisy predictions, 
+                we introduce the bootstrapping mechanism to the original self-training loss. 
+                We show the proposed TPLD can be easily integrated into existing self-training 
+                based approaches and improves the performance significantly. 
+                Combined with the recently proposed CRST self-training framework, we achieve 
+                new state-of-the-art results on two standard UDA benchmarks.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Self-training, Domain Adaptation, Pseudo Label Correction.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+                <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Two-phase Pseudo Label Densification for Self-training based Domain Adaptation.<br>
+              Inkyu Shin, Sanghyun Woo, <strong>Fei Pan</strong>, In So Kweon.<br>
+              European Conference on Computer Vision (ECCV), 2020.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Recently, deep self-training approaches emerged as a powerful solution to 
+                the unsupervised domain adaptation. The self-training scheme involves 
+                iterative processing of target data; it generates target pseudo labels 
+                and retrains the network. However, since only the confident predictions 
+                are taken as pseudo labels, existing self-training approaches inevitably 
+                produce sparse pseudo labels in practice. We see this is critical because 
+                the resulting insufficient training-signals lead to a suboptimal, 
+                error-prone model. In order to tackle this problem, we propose a novel 
+                Two-phase Pseudo Label Densification framework, referred to as TPLD. 
+                In the first phase, we use sliding window voting to propagate the confident 
+                predictions, utilizing intrinsic spatial-correlations in the images. 
+                In the second phase, we perform a confidence-based easy-hard classification. 
+                For the easy samples, we now employ their full pseudo labels. 
+                For the hard ones, we instead adopt adversarial learning to enforce hard-to-easy 
+                feature alignment. To ease the training process and avoid noisy predictions, 
+                we introduce the bootstrapping mechanism to the original self-training loss. 
+                We show the proposed TPLD can be easily integrated into existing self-training 
+                based approaches and improves the performance significantly. 
+                Combined with the recently proposed CRST self-training framework, we achieve 
+                new state-of-the-art results on two standard UDA benchmarks.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Self-training, Domain Adaptation, Pseudo Label Correction.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-supervision.<br>
+              <strong>Fei Pan</strong>, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon.<br>
+              IEEE Computer Vision and Pattern Recognition Conference (CVPR), 2020. <b style="color:red;">Oral Presentation</b><br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Convolutional neural network-based approaches have achieved remarkable progress 
+                in semantic segmentation. However, these approaches heavily rely on annotated 
+                data which are labor intensive. To cope with this limitation, automatically 
+                annotated data generated from graphic engines are used to train segmentation 
+                models. However, the models trained from synthetic data are difficult to transfer 
+                to real images. To tackle this issue, previous works have considered directly 
+                adapting models from the source data to the unlabeled target data (to reduce the 
+                inter-domain gap). Nonetheless, these techniques do not consider the large 
+                distribution gap among the target data itself (intra-domain gap). 
+                In this work, we propose a two-step self-supervised domain adaptation approach 
+                to minimize the inter-domain and intra-domain gap together. 
+                First, we conduct the inter-domain adaptation of the model; 
+                from this adaptation, we separate the target domain into an easy and hard split 
+                using an entropy-based ranking function. Finally, to decrease the intra-domain 
+                gap, we propose to employ a self-supervised adaptation technique from the easy to 
+                the hard split. Experimental results on numerous benchmark datasets highlight the 
+                effectiveness of our method against existing state-of-the-art approaches. 
+                The source code is available at https://github.com/feipanir/IntraDA.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Domain Adaptation, Adversarial Training, Semantic Segmentation, Self-supervised Learning.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Variational Prototyping-Encoder: One-shot Learning with Prototypical Images.<br>
+              Junsik Kim, Tae-hyun Oh, Seokju Lee, <strong>Fei Pan</strong>, In So Kweon.<br>
+              IEEE Computer Vision and Pattern Recognition Conference (CVPR), 2019.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                In daily life, graphic symbols, such as traffic signs and brand logos, 
+                are ubiquitously utilized around us due to its intuitive expression beyond 
+                language boundary. We tackle an open-set graphic symbol recognition problem 
+                by one-shot classification with prototypical images as a single training example 
+                for each novel class. We take an approach to learn a generalizable embedding space 
+                for novel tasks. We propose a new approach called variational prototyping-encoder (VPE) 
+                that learns the image translation task from real-world input images to their corresponding 
+                prototypical images as a meta-task. As a result, VPE learns image similarity as well as 
+                prototypical concepts which differs from widely used metric learning based approaches. 
+                Our experiments with diverse datasets demonstrate that the proposed VPE performs favorably 
+                against competing metric learning based one-shot methods. Also, our qualitative analyses 
+                show that our meta-task induces an effective embedding space suitable for unseen data 
+                representation.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                One-Shot Learning, Prototypical Learning, Variational Auto-encoder.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              Driver Drowsiness Detection System Based on Feature Representation Learning Using Various Deep Networks.<br>
+              Sanghyuk Park, <strong>Fei Pan</strong>, Sunghun Kang, Chang D. Yoo.<br>
+              Asian Conference on Computer Vision Workshops (ACCVW), 2016.<br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                Statistics have shown that 20% of all road accidents are fatigue-related, 
+                and drowsy detection is a car safety algorithm that can alert a snoozing driver 
+                in hopes of preventing an accident. 
+                This paper proposes a deep architecture referred to as deep drowsiness detection (DDD) 
+                network for learning effective features and detecting drowsiness given a RGB input 
+                video of a driver. The DDD network consists of three deep networks for attaining global 
+                robustness to background and environmental variations and learning local facial 
+                movements and head gestures important for reliable detection. 
+                The outputs of the three networks are integrated and fed to a softmax classifier for 
+                drowsiness detection. Experimental results show that DDD achieves 73.06% detection accuracy on 
+                NTHU-drowsy driver detection benchmark dataset.
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Driver Drowsiness Detection, Representation learning.
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
   
-  <script src="script.js"></script>
+    <strong>Academic Service</strong><br>
+  <ul>
+    <li>Journal Review: TPAMI, CVIU, Neurocomputing, Pattern Recognition Letters.</li>
+    <li>Conference Review: CVPR, ICCV, ECCV, NeurIPS, AAAI. </li>
+  </ul>
+  
   <p align="right">
     <small><i>updated by 2023</i></small><br>
   </p>
   
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -281,7 +281,7 @@ footer {
 
 
 .read-more-btn{
-  color: #595959;
+  color: rgb(17, 106, 151);
 }
 
 .read-more-text{
@@ -290,5 +290,5 @@ footer {
 
 .read-more-text--show{
   display: inline;
-  color:#576c91;
+  color:rgb(120, 118, 118);
 }
