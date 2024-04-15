@@ -49,6 +49,50 @@
       <ul>
         <!-- Every paper starts with <li> and ends with </li> -->
 
+
+        <!-- Paper boundary -->
+        <li>
+          <div class="container">
+            <p>
+              MoDA: Leveraging Motion Prior from Videos for Advancing Unsupervised Domain 
+              Adaptation in Semantic Segmentation.<br>
+              <strong>Fei Pan</strong>, Xu Yin, Seokju Lee, Sungeui Yoon, In So Kweon.<br>
+              IEEE/CVF Computer Vision and Pattern Recognition Conference Workshop (CVPRW), 2024. <a href="https://browse.arxiv.org/pdf/2309.11711v1.pdf">[pdf]</a> <br>
+              <i>Learning with Limited Labelled Data for Image and Video Understanding.</i><br>
+              <b style="color:red;">Best Paper Award</b> <br>
+              <span class="read-more-text">
+                <b>Abstract</b> 
+                <br>
+                  Unsupervised domain adaptation (UDA) is an effective approach to handle the 
+                  lack of annotations in the target domain for the semantic segmentation task. 
+                  In this work, we consider a more practical UDA setting where the target domain 
+                  contains sequential frames of the unlabeled videos which are easy to collect
+                  in practice. A recent study suggests self-supervised learning of the object motion 
+                  from unlabeled videos with geometric constraints. We design a motion-guided domain 
+                  adaptive semantic segmentation framework (MoDA), that utilizes self-supervised object 
+                  motion to learn effective representations in the target domain. MoDA differs from 
+                  previous methods that use temporal consistency regularization for the target domain frames. 
+                  Instead, MoDA deals separately with the domain alignment on the foreground and 
+                  background categories using different strategies. Specifically, MoDA contains foreground 
+                  object discovery and foreground semantic mining to align the foreground domain gaps by 
+                  taking the instance-level guidance from the object motion. 
+                  Additionally, MoDA includes background adversarial training which contains a background 
+                  category-specific discriminator to handle the background domain gaps. 
+                  Experimental results on multiple benchmarks highlight the effectiveness of 
+                  MoDA against existing approaches in the domain adaptive image segmentation and 
+                  domain adaptive video segmentation. Moreover, MoDA is versatile and can be used in 
+                  conjunction with existing state-of-the-art approaches to further improve performance.  
+                <br>
+                <br>
+                <b>Key Words:</b> 
+                Unsupervised Domain Adaptation, Semantic Segmentation, Motion Understanding, Geometric Learning.
+                <br>
+              </span>
+              <span class="read-more-btn">Read More</span>
+            </p>
+          </div>
+        </li>
+
         <!-- Paper boundary -->
         <li>
           <div class="container">
@@ -56,6 +100,7 @@
               ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object.<br>
               Chengshuang Zhang, <strong>Fei Pan</strong>,  Junmo Kim, In So Kweon, Chengzhi Mao.<br>
               IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2024. <a href="">[pdf]</a> <a href="https://github.com/chenshuang-zhang/imagenet_d">[code]</a> <a href="">[poster]</a><br>
+              <b style="color:red;">Highlight Poster</b> <br>
               <span class="read-more-text">
                 <b>Abstract</b> 
                 <br>
@@ -155,84 +200,7 @@
             </div>
         </li>
         
-        <!-- Paper boundary -->
-        <li>
-            <div class="container">
-              <p>
-                Fine-grained Background Representation for Weakly Supervised Semantic Segmentation.<br>
-                Xu Yin, Woobin Im, Dongbo Min, Yuchi Huo, <strong>Fei Pan</strong>, Sungeui Yoon.<br>
-                Under Reivew, 2023.<br>
-                <span class="read-more-text">
-                  <b>Abstract</b> 
-                  <br>
-                    Generating reliable pseudo masks from image-level labels is challenging in the weakly 
-                    supervised semantic segmentation (WSSS) task due to the lack of spatial information. 
-                    Prevalent class activation map (CAM)-based solutions are challenged to discriminate 
-                    the foreground (FG) objects from the suspicious background (BG) pixels (a.k.a. co-occurring) 
-                    and learn the integral object regions. 
-                    This paper proposes a simple fine-grained background representation (FBR) 
-                    method to discover and represent diverse BG semantics and address the co-occurring problems. 
-                    We abandon the use of the class prototype or pixel-level features for BG representation. 
-                    Instead, we develop a novel primitive, negative region of interest (NROI), 
-                    to capture the fine-grained BG semantic information and conduct the pixel-to-NROI 
-                    contrast to distinguish the confusing BG pixels. We also present an active sampling 
-                    strategy to mine the FG negatives on-the-fly, enabling efficient pixel-to-pixel intra-foreground 
-                    contrastive learning to activate the entire object region. 
-                    Thanks to the simplicity of design and convenience in use, 
-                    our FBR is architecture-agnostic and can be seamlessly plugged into various WSSS models. 
-                    Experimental results on Pascal Voc 2012 and MS COCO 2014 show that FBR exceeds existing studies, 
-                    obtaining new state-of-art performances in different settings.
-                  <br>
-                  <br>
-                  <b>Key Words:</b> 
-                    Representation Learning, Class Activation Map, Semantic Segmentation.
-                  <br>
-                </span>
-                <span class="read-more-btn">Read More</span>
-              </p>
-            </div>
-        </li>
         
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              MoDA: Leveraging Motion Prior from Videos for Advancing Unsupervised Domain 
-              Adaptation in Semantic Segmentation.<br>
-              <strong>Fei Pan</strong>*, Xu Yin*, Seokju Lee, Sungeui Yoon, In So Kweon.<br>
-              Under Review, 2023. <a href="https://browse.arxiv.org/pdf/2309.11711v1.pdf">[pdf]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                  Unsupervised domain adaptation (UDA) is an effective approach to handle the 
-                  lack of annotations in the target domain for the semantic segmentation task. 
-                  In this work, we consider a more practical UDA setting where the target domain 
-                  contains sequential frames of the unlabeled videos which are easy to collect
-                  in practice. A recent study suggests self-supervised learning of the object motion 
-                  from unlabeled videos with geometric constraints. We design a motion-guided domain 
-                  adaptive semantic segmentation framework (MoDA), that utilizes self-supervised object 
-                  motion to learn effective representations in the target domain. MoDA differs from 
-                  previous methods that use temporal consistency regularization for the target domain frames. 
-                  Instead, MoDA deals separately with the domain alignment on the foreground and 
-                  background categories using different strategies. Specifically, MoDA contains foreground 
-                  object discovery and foreground semantic mining to align the foreground domain gaps by 
-                  taking the instance-level guidance from the object motion. 
-                  Additionally, MoDA includes background adversarial training which contains a background 
-                  category-specific discriminator to handle the background domain gaps. 
-                  Experimental results on multiple benchmarks highlight the effectiveness of 
-                  MoDA against existing approaches in the domain adaptive image segmentation and 
-                  domain adaptive video segmentation. Moreover, MoDA is versatile and can be used in 
-                  conjunction with existing state-of-the-art approaches to further improve performance.  
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Unsupervised domain adaptation, Semantic Segmentation, Domain Adaptive Video Segmentation, Geometric Learning.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
 
 
         <!-- Paper boundary -->
@@ -455,7 +423,9 @@
             <p>
               Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-supervision.<br>
               <strong>Fei Pan</strong>, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon.<br>
-              IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2020. <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Pan_Unsupervised_Intra-Domain_Adaptation_for_Semantic_Segmentation_Through_Self-Supervision_CVPR_2020_paper.pdf">[pdf]</a> <a href="https://github.com/feipanir/IntraDA">[code]</a> <b style="color:red;">Oral Presentation</b><br>
+              IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2020. <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Pan_Unsupervised_Intra-Domain_Adaptation_for_Semantic_Segmentation_Through_Self-Supervision_CVPR_2020_paper.pdf">[pdf]</a> <a href="https://github.com/feipanir/IntraDA">[code]</a> <br>
+
+              <b style="color:red;">Oral Presentation</b><br>
               <span class="read-more-text">
                 <b>Abstract</b> 
                 <br>
