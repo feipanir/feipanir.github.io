@@ -48,6 +48,19 @@
   }
   updateLangBtn();
 
+  /* ---------- Email de-obfuscation (kept out of static HTML to deter scrapers) ---------- */
+  var emailLink = document.getElementById('email-link');
+  if (emailLink) {
+    var user = emailLink.dataset.u.split('').reverse().join('');
+    var domain = emailLink.dataset.d.split('').reverse().join('');
+    var address = user + '@' + domain;
+    emailLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = 'mailto:' + address;
+    });
+    emailLink.title = address;
+  }
+
   /* ---------- Read more / abstract toggles ---------- */
   document.querySelectorAll('.pub-item').forEach(function (item) {
     var btn = item.querySelector('.read-more-btn');

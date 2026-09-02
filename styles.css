@@ -22,6 +22,7 @@
   --radius: 12px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", Roboto, Helvetica, Arial, sans-serif;
   --font-serif: "Lora", Georgia, "Times New Roman", serif;
+  --font-serif-zh: "Noto Serif SC", "Songti SC", "SimSun", serif;
   --font-title: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
@@ -75,7 +76,7 @@
 /* ===================== Language toggle ===================== */
 html[lang="en"] .lang-zh { display: none; }
 html[lang="zh"] .lang-en { display: none; }
-html[lang="zh"] body { font-family: var(--font-sans); }
+html[lang="zh"] body { font-family: var(--font-serif-zh); }
 html[lang="en"] body { font-family: var(--font-serif); }
 html[lang="en"] .section-title { font-family: var(--font-title); }
 
@@ -95,6 +96,8 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 
 h1, h2, h3, h4 { color: var(--fg); font-weight: 650; line-height: 1.25; margin: 0; }
 p { margin: 0 0 1em; color: var(--fg-muted); }
+
+#about p { text-align: justify; }
 
 .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
@@ -136,8 +139,10 @@ p { margin: 0 0 1em; color: var(--fg-muted); }
   color: var(--fg-muted);
   font-size: 13.5px;
   white-space: nowrap;
+  opacity: 0.65;
+  transition: opacity 0.15s ease, color 0.15s ease;
 }
-.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-links a:hover { color: var(--accent); opacity: 1; text-decoration: none; }
 
 .controls { display: flex; gap: 8px; align-items: center; }
 
@@ -259,9 +264,6 @@ section + section { border-top: 1px solid var(--border); }
 
 .timeline-org { font-weight: 650; font-size: 15.5px; color: var(--fg); }
 .timeline-role { color: var(--accent); font-size: 13.5px; font-weight: 600; margin-bottom: 8px; }
-
-.timeline-item ul { margin: 8px 0 0; padding-left: 18px; }
-.timeline-item li { color: var(--fg-muted); margin-bottom: 6px; font-size: 14px; }
 
 /* ===================== Education ===================== */
 .edu-item { margin-bottom: 18px; }
@@ -390,13 +392,8 @@ footer {
   padding: 32px 24px 60px;
   text-align: center;
 }
-.quote {
-  font-style: italic;
-  color: var(--fg-faint);
-  font-size: 13.5px;
-}
 .footer-meta {
-  margin-top: 14px;
+  margin-top: 0;
   font-family: var(--font-mono);
   font-size: 11.5px;
   color: var(--fg-faint);
