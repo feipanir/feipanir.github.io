@@ -1,543 +1,602 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fei Pan (潘飞) — Associate Research Fellow at Zhejiang Lab. Computer vision, generative models, embodied intelligence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="./styles.css">
-  <title>Fei Pan @ Univ. of Michigan</title>
+  <title>Fei Pan · Associate Research Fellow, Zhejiang Lab</title>
 </head>
-<body>
-  <div class='wrapper'>
-    <table>
-      <tbody><tr>
-        <td width="120">
-          <img src="./files/fei_bio.png">
-        </td>
-        <td>
-          <h2>Fei Pan</h2>
-          feipan [at] umich.edu<br>
-          <a href="./files/fei_cv.pdf">CV</a> | 
-          <a href="https://scholar.google.com/citations?hl=en&user=VGE3DlYAAAAJ"> Google Scholar</a> 
-        </td>
-    </tr>
-    </tbody></table>    
-    
-    <p align="justify">I am a Research Fellow in EECS at <a href="https://umich.edu/">University of Michigan</a>
-     and fortunate to work with Prof. <a href="https://scholar.google.com/citations?user=uqWkLzMAAAAJ"> Stella X. Yu</a>. 
-      My research lies in Computer Vision and Machine Learning. 
-      I am interested in developing large-scale learning algorithms 
-        for visual tasks with strong generalizability, vigorous robustness, and minimal human supervision.
-      I obtained my Ph.D. degree in 2023 under the supervision from Prof. <a href="https://scholar.google.com/citations?user=XA8EOlEAAAAJ&hl=en">In So Kweon</a> at <a href="https://www.kaist.ac.kr/en/">KAIST</a>. 
-      I've received <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship">Innovation Fellowship</a> from <a href="https://www.qualcomm.com/">Qualcomm</a> and 
-        Ph.D. scholarship from <a href="https://www.bosch.com/">BOSCH</a> during my Ph.D. course. <br>
-      
-    </p>
-    <p>
-    <h3 id="research_interests">Research Interest</h3>
-      <ul>
-        <li>Grouping and Segmentation</li>
-        <li>Large-Scale Vision & Language Models</li>
-        <li>Adaptation & Generalization of Deep Learning Models</li>
-      </ul>
-    </p>
+<body data-title-en="Fei Pan · Associate Research Fellow, Zhejiang Lab" data-title-zh="潘飞 · 之江实验室副研究员">
 
-    <h3 id="publications">Publications</h3>
-    <!-- <h4 id="2023">2023</h4> -->
-    
-    <div class="read-more-container">
-      <ul>
-        <!-- Every paper starts with <li> and ends with </li> -->
-
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              MoDA: Leveraging Motion Prior from Videos for Advancing Unsupervised Domain 
-              Adaptation in Semantic Segmentation.<br>
-              <strong>Fei Pan</strong>, Xu Yin, Seokju Lee, Axi Niu, Sungeui Yoon, In So Kweon.<br>
-              IEEE/CVF Computer Vision and Pattern Recognition Conference Workshop (CVPRW), 2024. <a href="https://arxiv.org/pdf/2309.11711.pdf">[pdf]</a><a href="https://github.com/feipanir/MoDA/tree/main">[code]</a> <br>
-              <i>Learning with Limited Labelled Data for Image and Video Understanding.</i><br>
-              <b style="color:red;">Best Paper Award</b> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                  Unsupervised domain adaptation (UDA) is an effective approach to handle the 
-                  lack of annotations in the target domain for the semantic segmentation task. 
-                  In this work, we consider a more practical UDA setting where the target domain 
-                  contains sequential frames of the unlabeled videos which are easy to collect
-                  in practice. A recent study suggests self-supervised learning of the object motion 
-                  from unlabeled videos with geometric constraints. We design a motion-guided domain 
-                  adaptive semantic segmentation framework (MoDA), that utilizes self-supervised object 
-                  motion to learn effective representations in the target domain. MoDA differs from 
-                  previous methods that use temporal consistency regularization for the target domain frames. 
-                  Instead, MoDA deals separately with the domain alignment on the foreground and 
-                  background categories using different strategies. Specifically, MoDA contains foreground 
-                  object discovery and foreground semantic mining to align the foreground domain gaps by 
-                  taking the instance-level guidance from the object motion. 
-                  Additionally, MoDA includes background adversarial training which contains a background 
-                  category-specific discriminator to handle the background domain gaps. 
-                  Experimental results on multiple benchmarks highlight the effectiveness of 
-                  MoDA against existing approaches in the domain adaptive image segmentation and 
-                  domain adaptive video segmentation. Moreover, MoDA is versatile and can be used in 
-                  conjunction with existing state-of-the-art approaches to further improve performance.  
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Unsupervised Domain Adaptation, Semantic Segmentation, Motion Understanding, Geometric Learning.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object.<br>
-              Chenshuang Zhang, <strong>Fei Pan</strong>,  Junmo Kim, In So Kweon, Chengzhi Mao.<br>
-              IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2024. <a href="https://arxiv.org/pdf/2403.18775.pdf">[pdf]</a> <a href="https://github.com/chenshuang-zhang/imagenet_d">[code]</a><br>
-              <b style="color:red;">Highlight Poster</b> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                We establish rigorous benchmarks for visual perception robustness. 
-                Synthetic images such as ImageNet-C, ImageNet-9, and Stylized ImageNet provide specific type of 
-                evaluation over synthetic corruptions, backgrounds, and textures, 
-                yet those robustness benchmarks are restricted in specified variations and have low synthetic quality. 
-                In this work, we introduce generative model as a data source for synthesizing hard images that 
-                benchmark deep models' robustness. 
-                Leveraging diffusion models, we are able to generate images with more diversified backgrounds, 
-                textures, and materials than any prior work, where we term this benchmark as ImageNet-D.
-                Experimental results show that ImageNet-D results in a significant accuracy drop 
-                to a range of vision models, from the standard ResNet visual classifier to the 
-                latest foundation models like CLIP and MiniGPT-4, significantly reducing their accuracy 
-                by up to 64%. Our work suggests that diffusion models can be an effective source to test vision models.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Diffusion Models, Large-Scale Vision and Language Models, Robustness and Generalization,.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Zero-shot Building Attribute Extraction from Large-Scale Vision and Language Models.<br>
-              <strong>Fei Pan</strong>, Sangryul Jeon, Brian Wang, Frank Mckenna, Stella Yu.<br>
-              IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024. <a href="https://arxiv.org/pdf/2312.12479.pdf">[pdf]</a> <a href="https://github.com/BuildingInfoSys/zeroshot_attribute_extraction">[code]</a> <a href="https://drive.google.com/file/d/1t8vMpSuvm7KgLj0hKt0I6jxb6gzlYrep/view">[poster]</a><br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Modern building recognition methods, exemplified by the BRAILS framework, 
-                utilize supervised learning to extract information from satellite and 
-                street-view images for image classification and semantic segmentation tasks. 
-                However, each task module requires human-annotated data, 
-                hindering the scalability and robustness to regional variations and annotation imbalances. 
-                In response, we propose a new zero-shot workflow for building attribute extraction 
-                that utilizes large-scale vision and language models to mitigate reliance on external annotations. 
-                The proposed workflow contains two key components: image-level captioning and 
-                segment-level captioning for the building images based on the vocabularies 
-                pertinent to structural and civil engineering. 
-                These two components generate descriptive captions by computing feature 
-                representations of the image and the vocabularies, 
-                and facilitating a semantic match between the visual and textual representations. 
-                Consequently, our framework offers a promising avenue to enhance AI-driven 
-                captioning for building attribute extraction in the structural and 
-                civil engineering domains, ultimately reducing reliance on human annotations 
-                while bolstering performance and adaptability. 
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Zero-shot Leanring, Building Attribute Extraction, Large-Scale Vision & Language Models.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-            <div class="container">
-              <p>
-                Masking-augmented Collaborative Domain Congregation for 
-                Multi-target Domain Adaptation in Semantic Segmentation.<br>
-                <strong>Fei Pan</strong><sup>*</sup>, Dong He<sup>*</sup>, Xu Yin, Chenshuang Zhang, Munchurl Kim.<br>
-                IEEE Intelligent Vehicles Symposium (IV), 2024.<br>
-                <b style="color:red;">Best Paper Nominated</b> <br>
-                <span class="read-more-text">
-                  <b>Abstract</b> <br>
-                  This paper addresses the challenges in multi-target domain adaptive segmentation 
-                  which aims at learning a single model that adapts to multiple diverse target domains. 
-                  Existing methods show limited performance as they only consider the difference in visual appearance (style) 
-                  while ignoring the (contextual) variations among multiple target domains. 
-                  In contrast, we propose a novel approach termed Masking-augmented Collaborative Domain Congregation (MacDC) 
-                  to handle the style gap and contextual gap altogether. 
-                  The proposed MacDC comprises two key parts: collaborative domain congregation (CDC) and multi-context masking consistency (MCMC). 
-                  Our CDC handles the style and contextual gaps among target domains by data mixing, which generates image-level and region-level 
-                  intermediate domains among target domains. To further strengthen contextual alignment, 
-                  our MCMC applies a masking-based self-supervised augmentation consistency that enforces the model's understanding of 
-                  diverse contexts together.
-                  MacDC directly learns a single model for multi-target domain adaptation without requiring multiple network training and subsequent distillation. 
-                  Despite its simplicity, MacDC shows efficacy in mitigating the style and contextual gap among multiple target domains and demonstrates 
-                  superior performance on multi-target domain adaptation for segmentation benchmarks compared to existing state-of-the-art approaches. 
-                  <br>
-                  <br>
-                  <b>Key Words:</b> Multi-target Domain Adaptation, Semantic Segmentation, Masking Consistency, Self-supervised Data Augmentation.
-                  <br>
-                </span>
-                <span class="read-more-btn">Read More</span>
-              </p>
-              
-            </div>
-        </li>
-        
-        
-
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              CCTV-Calib: a Toolbox to Calibrate Surveillance Cameras Around the Globe.<br>
-              Francois Rameau, Jaesung Choe, <strong>Fei Pan</strong>, Seokju Lee, In So Kweon.<br>
-              Machine Vision and Applications, 2023. <a href="https://trebuchet.public.springernature.app/get_content/52aff0d9-9afd-4117-a037-d0e8e34fd66c?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20231021&utm_content=10.1007/s00138-023-01476-1">[pdf]</a> <a href="https://github.com/rameau-fr/CCTV-Calib">[code]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                In this paper, we propose CCTV-Calib, a user-friendly toolbox to calibrate 
-                traffic cameras using satellite views.
-                Specifically, CCTV-Calib can estimate the intrinsic and extrinsic
-                parameters as well as the GPS location of one or multiple CCTV
-                cameras in a few clicks. Previous surveillance camera calibration
-                strategies rely on various assumptions on the camera parameters
-                (e.g., absence of radial distortion), location, or detected objects
-                in the scene. In contrast, our system is able to calibrate both
-                perspective and fisheye cameras without restrictive structural
-                or semantic assumptions. In fact, only a few correspondences
-                between an image and its satellite view are sufficient to accurately
-                calibrate a camera. Such kind of camera geo-localization and 
-                calibration via satellite imaging has yet attracted narrow attention.
-                As a result, most existing techniques naively rely on manually
-                clicked keypoint correspondences between the satellite view and
-                the CCTV image, leading to poor accuracy and repeatability. To
-                cope with these limitations and to ease the calibration process, we
-                propose an automated keypoints matching stage and a refinement
-                process improving the accuracy of the computed parameters. Our
-                toolbox has been qualitatively and quantitatively evaluated using
-                synthetic and real data from various traffic cameras around the
-                globe. We made these unique datasets freely available to the
-                community. Finally, in order to illustrate the relevance of our
-                calibration strategy, we demonstrate its applicability to 3D vehicle
-                geolocalization. Our novel calibration pipeline is integrated in a
-                easy to use GUI and is freely available via the following link:
-                https://github.com/rameau-fr/CCTV-Calib.  
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Camera Calibration, CCTV, Vehicle Geolocalization.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              ML-BPM: Multi-teacher Learning with Bidirectional Photometric Mixing for Open 
-              Compound Domain Adaptation in Semantic Segmentation.<br>
-              <strong>Fei Pan</strong>, Sungsu Hur, Seokju Lee, Junsik Kim, In So Kweon.<br>
-              European Conference on Computer Vision (ECCV), 2022. <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136940228.pdf">[pdf]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Open compound domain adaptation (OCDA) considers the target domain as the 
-                compound of multiple unknown homogeneous subdomains. 
-                The goal of OCDA is to minimize the domain gap between the labeled source domain 
-                and the unlabeled compound target domain, which benefits the model generalization 
-                to the unseen domains. Current OCDA for semantic segmentation methods adopt manual 
-                domain separation and employ a single model to simultaneously adapt to all the 
-                target subdomains. However, adapting to a target subdomain might hinder the model 
-                from adapting to other dissimilar target subdomains, which leads to limited performance. 
-                In this work, we introduce a multi-teacher framework with bidirectional photometric 
-                mixing to separately adapt to every target subdomain. First, we present an automatic 
-                domain separation to find the optimal number of subdomains. On this basis, we propose 
-                a multi-teacher framework in which each teacher model uses bidirectional photometric 
-                mixing to adapt to one target subdomain. Furthermore, we conduct an adaptive distillation 
-                to learn a student model and apply consistency regularization to improve the student 
-                generalization. Experimental results on benchmark datasets show the efficacy of the 
-                proposed approach for both the compound domain and the open domains against existing 
-                state-of-the-art approaches.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Domain Adaptation, Open Compound Domain Adaptation, Semantic Segmentation, Multi-teacher Distillation.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Labeling Where Adapting Fails: Cross-Domain Semantic Segmentation with Point 
-              Supervised via Active Learning.<br>
-              <strong>Fei Pan</strong>, Francois Rameau, Junsik Kim, In So Kweon. <br>
-              arXiv, 2022. <a href="https://browse.arxiv.org/pdf/2206.00181.pdf">[pdf]</a><br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Training models dedicated to semantic segmentation requires a large amount 
-                of pixel-wise annotated data. Due to their costly nature, these annotations
-                might not be available for the task at hand. To alleviate this problem, 
-                unsupervised domain adaptation approaches aim at aligning the feature 
-                distributions between the labeled source and the unlabeled target data. 
-                While these strategies lead to noticeable improvements, their effectiveness 
-                remains limited. To guide the domain adaptation task more efficiently, previous 
-                works attempted to include human interactions in this process under the form of 
-                sparse single-pixel annotations in the target data. In this work, we propose a 
-                new domain adaptation framework for semantic segmentation with annotated points 
-                via active selection. First, we conduct an unsupervised domain adaptation of the 
-                model; from this adaptation, we use an entropy-based uncertainty measurement for 
-                target points selection. Finally, to minimize the domain gap, we propose a domain 
-                adaptation framework utilizing these target points annotated by human annotators. 
-                Experimental results on benchmark datasets show the effectiveness of our methods 
-                against existing unsupervised domain adaptation approaches. The propose pipeline 
-                is generic and can be included as an extra module to existing domain adaptation strategies.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Active Learning, Unsupervised Domain Adaptation, Semantic Segmentation.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Attentive and Contrastive Learning for Joint Depth and Motion Field Estimation.<br>
-              Seokju Lee, Francois Rameau, <strong>Fei Pan</strong>, In So Kweon.<br>
-              International Conference on Computer Vision (ICCV), 2021. <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Lee_Attentive_and_Contrastive_Learning_for_Joint_Depth_and_Motion_Field_ICCV_2021_paper.pdf">[pdf]</a> <a href="https://github.com/SeokjuLee/Insta-DM">[code]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Estimating the motion of the camera together with the 3D
-                structure of the scene from a monocular vision system is a
-                complex task that often relies on the so-called scene rigidity
-                assumption. When observing a dynamic environment, this
-                assumption is violated which leads to an ambiguity between
-                the ego-motion of the camera and the motion of the objects.
-                To solve this problem, we present a self-supervised learning 
-                framework for 3D object motion field estimation from
-                monocular videos. Our contributions are two-fold. First, we
-                propose a two-stage projection pipeline to explicitly disentangle 
-                the camera ego-motion and the object motions with
-                dynamics attention module, called DAM. Specifically, we
-                design an integrated motion model that estimates the motion 
-                of the camera and object in the first and second warping stages, 
-                respectively, controlled by the attention module
-                through a shared motion encoder. Second, we propose an
-                object motion field estimation through contrastive sample
-                consensus, called CSAC, taking advantage of weak semantic
-                prior (bounding box from an object detector) and geometric 
-                constraints (each object respects the rigid body motion
-                model). Experiments on KITTI, Cityscapes, and Waymo
-                Open Dataset demonstrate the relevance of our approach
-                and show that our method outperforms state-of-the-art algorithms 
-                for the tasks of self-supervised monocular depth
-                estimation, object motion segmentation, monocular scene
-                flow estimation, and visual odometry.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Motion Field Estimation, Monocular Depth Prediction, Geometric Learning.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Two-phase Pseudo Label Densification for Self-training based Domain Adaptation.<br>
-              Inkyu Shin, Sanghyun Woo, <strong>Fei Pan</strong>, In So Kweon.<br>
-              European Conference on Computer Vision (ECCV), 2020. <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580528.pdf">[pdf]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Recently, deep self-training approaches emerged as a powerful solution to 
-                the unsupervised domain adaptation. The self-training scheme involves 
-                iterative processing of target data; it generates target pseudo labels 
-                and retrains the network. However, since only the confident predictions 
-                are taken as pseudo labels, existing self-training approaches inevitably 
-                produce sparse pseudo labels in practice. We see this is critical because 
-                the resulting insufficient training-signals lead to a suboptimal, 
-                error-prone model. In order to tackle this problem, we propose a novel 
-                Two-phase Pseudo Label Densification framework, referred to as TPLD. 
-                In the first phase, we use sliding window voting to propagate the confident 
-                predictions, utilizing intrinsic spatial-correlations in the images. 
-                In the second phase, we perform a confidence-based easy-hard classification. 
-                For the easy samples, we now employ their full pseudo labels. 
-                For the hard ones, we instead adopt adversarial learning to enforce hard-to-easy 
-                feature alignment. To ease the training process and avoid noisy predictions, 
-                we introduce the bootstrapping mechanism to the original self-training loss. 
-                We show the proposed TPLD can be easily integrated into existing self-training 
-                based approaches and improves the performance significantly. 
-                Combined with the recently proposed CRST self-training framework, we achieve 
-                new state-of-the-art results on two standard UDA benchmarks.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Self-training, Domain Adaptation, Pseudo Label Correction.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-supervision.<br>
-              <strong>Fei Pan</strong>, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon.<br>
-              IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2020. <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Pan_Unsupervised_Intra-Domain_Adaptation_for_Semantic_Segmentation_Through_Self-Supervision_CVPR_2020_paper.pdf">[pdf]</a> <a href="https://github.com/feipanir/IntraDA">[code]</a> <br>
-
-              <b style="color:red;">Oral Presentation</b><br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Convolutional neural network-based approaches have achieved remarkable progress 
-                in semantic segmentation. However, these approaches heavily rely on annotated 
-                data which are labor intensive. To cope with this limitation, automatically 
-                annotated data generated from graphic engines are used to train segmentation 
-                models. However, the models trained from synthetic data are difficult to transfer 
-                to real images. To tackle this issue, previous works have considered directly 
-                adapting models from the source data to the unlabeled target data (to reduce the 
-                inter-domain gap). Nonetheless, these techniques do not consider the large 
-                distribution gap among the target data itself (intra-domain gap). 
-                In this work, we propose a two-step self-supervised domain adaptation approach 
-                to minimize the inter-domain and intra-domain gap together. 
-                First, we conduct the inter-domain adaptation of the model; 
-                from this adaptation, we separate the target domain into an easy and hard split 
-                using an entropy-based ranking function. Finally, to decrease the intra-domain 
-                gap, we propose to employ a self-supervised adaptation technique from the easy to 
-                the hard split. Experimental results on numerous benchmark datasets highlight the 
-                effectiveness of our method against existing state-of-the-art approaches. 
-                The source code is available at https://github.com/feipanir/IntraDA.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                Domain Adaptation, Adversarial Training, Semantic Segmentation, Self-supervised Learning.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Variational Prototyping-Encoder: One-shot Learning with Prototypical Images.<br>
-              Junsik Kim, Tae-hyun Oh, Seokju Lee, <strong>Fei Pan</strong>, In So Kweon.<br>
-              IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2019. <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Kim_Variational_Prototyping-Encoder_One-Shot_Learning_With_Prototypical_Images_CVPR_2019_paper.pdf">[pdf]</a> <a href=" https://github.com/mibastro/VPE">[code]</a><br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                In daily life, graphic symbols, such as traffic signs and brand logos, 
-                are ubiquitously utilized around us due to its intuitive expression beyond 
-                language boundary. We tackle an open-set graphic symbol recognition problem 
-                by one-shot classification with prototypical images as a single training example 
-                for each novel class. We take an approach to learn a generalizable embedding space 
-                for novel tasks. We propose a new approach called variational prototyping-encoder (VPE) 
-                that learns the image translation task from real-world input images to their corresponding 
-                prototypical images as a meta-task. As a result, VPE learns image similarity as well as 
-                prototypical concepts which differs from widely used metric learning based approaches. 
-                Our experiments with diverse datasets demonstrate that the proposed VPE performs favorably 
-                against competing metric learning based one-shot methods. Also, our qualitative analyses 
-                show that our meta-task induces an effective embedding space suitable for unseen data 
-                representation.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                One-Shot Learning, Prototypical Learning, Variational Auto-encoder.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-
-        <!-- Paper boundary -->
-        <li>
-          <div class="container">
-            <p>
-              Driver Drowsiness Detection System Based on Feature Representation Learning Using Various Deep Networks.<br>
-              Sanghyuk Park, <strong>Fei Pan</strong>, Sunghun Kang, Chang D. Yoo.<br>
-              Asian Conference on Computer Vision Workshops (ACCVW), 2016. <a href="https://link.springer.com/chapter/10.1007/978-3-319-54526-4_12">[pdf]</a> <br>
-              <span class="read-more-text">
-                <b>Abstract</b> 
-                <br>
-                Statistics have shown that 20% of all road accidents are fatigue-related, 
-                and drowsy detection is a car safety algorithm that can alert a snoozing driver 
-                in hopes of preventing an accident. 
-                This paper proposes a deep architecture referred to as deep drowsiness detection (DDD) 
-                network for learning effective features and detecting drowsiness given a RGB input 
-                video of a driver. The DDD network consists of three deep networks for attaining global 
-                robustness to background and environmental variations and learning local facial 
-                movements and head gestures important for reliable detection. 
-                The outputs of the three networks are integrated and fed to a softmax classifier for 
-                drowsiness detection. Experimental results show that DDD achieves 73.06% detection accuracy on 
-                NTHU-drowsy driver detection benchmark dataset.
-                <br>
-                <br>
-                <b>Key Words:</b> 
-                  Driver Drowsiness Detection, Representation learning.
-                <br>
-              </span>
-              <span class="read-more-btn">Read More</span>
-            </p>
-          </div>
-        </li>
-      </ul>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">FP</a>
+      <div class="nav-links">
+        <a href="#about"><span class="lang-en">About</span><span class="lang-zh">简介</span></a>
+        <a href="#experience"><span class="lang-en">Experience</span><span class="lang-zh">履历</span></a>
+        <a href="#education"><span class="lang-en">Education</span><span class="lang-zh">教育</span></a>
+        <a href="#publications"><span class="lang-en">Publications</span><span class="lang-zh">论文</span></a>
+        <a href="#awards"><span class="lang-en">Awards</span><span class="lang-zh">荣誉</span></a>
+      </div>
+      <div class="controls">
+        <button id="lang-toggle" class="icon-btn" aria-label="Toggle language">中文</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">☾</button>
+      </div>
     </div>
-  
-    <strong>Academic Service</strong><br>
-  <ul>
-    <li>Journal Review: TPAMI, CVIU, Neurocomputing, Pattern Recognition Letters.</li>
-    <li>Conference Review: CVPR, ICCV, ECCV, NeurIPS, AAAI. </li>
-  </ul>
-  
-  <p align="center">
-    <small><i>The three fundamental problems of computer vision are correspondence, correspondence, and correspondence! -- Takeo Kanade</i></small><br>
-  </p>
-  
-  </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <img class="avatar" src="./files/fei_bio.png" alt="Fei Pan">
+    <div>
+      <h1><span class="lang-en">Fei Pan</span><span class="lang-zh">潘飞</span></h1>
+      <p class="role">
+        <span class="lang-en">Associate Research Fellow, Zhejiang Lab</span>
+        <span class="lang-zh">副研究员，之江实验室</span>
+      </p>
+      <div class="contact-line">
+        <a href="mailto:feipanir@icloud.com">feipanir@icloud.com</a>
+        <a href="./files/feipan_cv.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=VGE3DlYAAAAJ">Google Scholar</a>
+        <a href="https://github.com/feipanir">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <div class="section-title"><span class="lang-en">About</span><span class="lang-zh">简介</span></div>
+      <p class="lang-en">
+        I am an Associate Research Fellow at <a href="https://en.wikipedia.org/wiki/Zhejiang_Lab">Zhejiang Lab</a> in
+        Hangzhou, working on computer vision, generative models, and embodied intelligence. Prior to this, I was
+        an AI algorithm researcher at Vibe Inc. (Hangzhou), where I worked on embodied AI, vision-language-action
+        (VLA) models, and on-device model compression, and a Research Fellow at the
+        <a href="https://umich.edu/">University of Michigan</a>, working with Prof.
+        <a href="https://scholar.google.com/citations?user=uqWkLzMAAAAJ">Stella X. Yu</a> on large-scale
+        vision-language models and diffusion models. I obtained my Ph.D. in 2023 under the supervision of Prof.
+        <a href="https://scholar.google.com/citations?user=XA8EOlEAAAAJ&hl=en">In So Kweon</a> at
+        <a href="https://www.kaist.ac.kr/en/">KAIST</a>. My research spans semantic segmentation, domain adaptation,
+        self-supervised representation learning, and generative data augmentation, with the goal of building visual
+        and embodied intelligence systems that generalize robustly with minimal human supervision. I received the
+        <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship">Qualcomm Innovation
+        Fellowship</a> and a Ph.D. scholarship from <a href="https://www.bosch.com/">Bosch</a> during my doctoral
+        studies.
+      </p>
+      <p class="lang-zh">
+        我目前在位于杭州的<a href="https://en.wikipedia.org/wiki/Zhejiang_Lab">之江实验室</a>担任副研究员，研究方向包括计算机视觉、生成模型与具身智能。
+        此前，我在杭州昼光科技有限公司（Vibe Inc.）担任 AI 算法研发工程师，专注于具身智能、视觉-语言-动作（VLA）模型与端侧模型压缩；
+        并在<a href="https://umich.edu/">密西根大学安娜堡分校</a>担任博士后研究员，与
+        <a href="https://scholar.google.com/citations?user=uqWkLzMAAAAJ">Stella X. Yu</a> 教授合作研究大规模视觉语言模型与扩散模型。
+        我于 2023 年在<a href="https://www.kaist.ac.kr/en/">韩国科学技术院（KAIST）</a>获得博士学位，导师为
+        <a href="https://scholar.google.com/citations?user=XA8EOlEAAAAJ&hl=en">In So Kweon</a> 教授。
+        我的研究涵盖语义分割、域自适应、自监督表征学习与生成式数据增强，致力于构建在极少人工监督下具备强泛化能力的视觉与具身智能系统。
+        攻读博士期间，我获得了<a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship">高通创新奖学金</a>及
+        <a href="https://www.bosch.com/">博世</a>博士奖学金。
+      </p>
+
+      <div class="interest-grid">
+        <div class="interest-item">
+          <span class="lang-en">Embodied AI &amp; Vision-Language-Action (VLA) Models</span>
+          <span class="lang-zh">具身智能与视觉-语言-动作（VLA）模型</span>
+        </div>
+        <div class="interest-item">
+          <span class="lang-en">Generative Models &amp; Diffusion-based Data Synthesis</span>
+          <span class="lang-zh">生成模型与扩散式数据合成</span>
+        </div>
+        <div class="interest-item">
+          <span class="lang-en">Domain Adaptation &amp; Generalization</span>
+          <span class="lang-zh">域自适应与泛化</span>
+        </div>
+        <div class="interest-item">
+          <span class="lang-en">Self-supervised &amp; Unsupervised Representation Learning</span>
+          <span class="lang-zh">自监督与无监督表征学习</span>
+        </div>
+        <div class="interest-item">
+          <span class="lang-en">Model Compression, Quantization &amp; Edge Deployment</span>
+          <span class="lang-zh">模型压缩、量化与端侧部署</span>
+        </div>
+        <div class="interest-item">
+          <span class="lang-en">Semantic Segmentation &amp; Open-Vocabulary Perception</span>
+          <span class="lang-zh">语义分割与开放词汇视觉感知</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><span class="lang-en">Experience</span><span class="lang-zh">工作履历</span></div>
+      <div class="timeline">
+
+        <div class="timeline-item current">
+          <div class="timeline-date">2026.09 – <span class="lang-en">Present</span><span class="lang-zh">至今</span></div>
+          <div class="timeline-org">Zhejiang Lab <span class="lang-en">(Hangzhou)</span><span class="lang-zh">（杭州）</span></div>
+          <div class="timeline-role"><span class="lang-en">Associate Research Fellow</span><span class="lang-zh">副研究员</span></div>
+          <p class="lang-en" style="margin:0;">Computer vision, generative AI, and embodied intelligence.</p>
+          <p class="lang-zh" style="margin:0;">研究方向为计算机视觉、生成式人工智能与具身智能。</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2025.04 – 2026.08</div>
+          <div class="timeline-org">Vibe Inc. <span class="lang-en">(Hangzhou)</span><span class="lang-zh">昼光科技有限公司（杭州）</span></div>
+          <div class="timeline-role"><span class="lang-en">AI Algorithm Researcher</span><span class="lang-zh">AI 算法研发</span></div>
+          <ul>
+            <li>
+              <span class="lang-en"><b>3D machine vision &amp; robotic perception</b> — deployed YOLO, MobileSAM,
+              FastSAM, EdgeSAM, and OWL-ViT on Jetson with Orbbec / Intel RealSense cameras for detection, segmentation,
+              and open-vocabulary perception; built grasp-detection pipelines (GraspNet, AnyGrasp, Graspness) with
+              MoveIt for closed-loop robotic manipulation; deployed ORB-SLAM2 and VGGT-SLAM for real-time
+              localization and mapping.</span>
+              <span class="lang-zh"><b>3D 机器视觉与机器人感知</b> — 基于 Orbbec 与 Intel RealSense 3D 相机，在 Jetson 平台完成
+              YOLO、MobileSAM、FastSAM、EdgeSAM、OWL-ViT 等模型的工程化部署，实现目标检测、语义分割与开放词汇视觉感知；
+              构建基于 PointNet 的 GraspNet、AnyGrasp、Graspness 抓取检测框架并结合 MoveIt 实现机械臂闭环抓取；
+              成功部署 ORB-SLAM2 与 VGGT-SLAM，实现机器人实时定位与建图。</span>
+            </li>
+            <li>
+              <span class="lang-en"><b>Self-collected datasets &amp; VLA fine-tuning</b> — built grasping datasets on
+              a LeRobot arm platform and fine-tuned Physical Intelligence's π0 model for stable, generalizable
+              grasping in custom environments.</span>
+              <span class="lang-zh"><b>自采数据集与 VLA 模型微调</b> — 基于 LeRobot 机械臂平台完成抓取数据采集与数据集构建，
+              并基于 Physical Intelligence 的开源模型 π0 微调，实现自定义场景下的稳定抓取与泛化执行。</span>
+            </li>
+            <li>
+              <span class="lang-en"><b>Ultra-low-power on-device speaker verification</b> — designed a lightweight
+              voiceprint embedding network with knowledge distillation, quantization-aware training, and ONNX
+              inference optimization for wearable AI chips, reducing inference power to 4mW.</span>
+              <span class="lang-zh"><b>超低功耗端侧声纹识别</b> — 面向可穿戴设备 AI 芯片，设计轻量级声纹嵌入网络，
+              结合知识蒸馏、量化感知训练（QAT）与 ONNX 推理优化，实现高精度部署，单次推理功耗降低至 4mW。</span>
+            </li>
+            <li>
+              <span class="lang-en"><b>Multimodal meeting-knowledge agent</b> — built an ASR + LLM pipeline for
+              meeting summarization, an embedding-based retrieval system (Milvus / ChromaDB), and a Neo4j knowledge
+              graph for multimodal retrieval-augmented generation.</span>
+              <span class="lang-zh"><b>多模态会议知识管理 Agent</b> — 通过 ASR 转写结合大语言模型完成会议总结与关键信息提取，
+              构建基于 Milvus/ChromaDB 的向量检索系统，并基于 Neo4J 构建知识图谱，实现多模态检索增强生成（RAG）。</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2023.09 – 2025.03</div>
+          <div class="timeline-org">
+            <span class="lang-en">University of Michigan, Ann Arbor</span>
+            <span class="lang-zh">密西根大学安娜堡分校</span>
+          </div>
+          <div class="timeline-role"><span class="lang-en">Research Fellow, EECS</span><span class="lang-zh">博士后研究员，EECS</span></div>
+          <p style="margin:0 0 8px;">
+            <span class="lang-en">Working with Prof. Stella X. Yu on large-scale vision-language models, diffusion models, and ViTs.</span>
+            <span class="lang-zh">与 Stella X. Yu 教授合作，研究大语言视觉模型、扩散模型与 ViTs。</span>
+          </p>
+          <ul>
+            <li><span class="lang-en">ImageNet-D: a diffusion-synthesized benchmark for testing visual model robustness (CVPR 2024 Highlight).</span>
+                <span class="lang-zh">ImageNet-D：基于扩散模型合成图像的视觉模型鲁棒性基准（CVPR 2024 Highlight）。</span></li>
+            <li><span class="lang-en">Zero-shot building attribute extraction from street-view and satellite imagery using LVLMs (WACV 2024).</span>
+                <span class="lang-zh">基于大规模视觉语言模型的街景/卫星图像建筑属性零样本抽取（WACV 2024）。</span></li>
+            <li><span class="lang-en">Unsupervised whole-object segmentation via contextual grouping with repulsion on self-supervised ViT features (NeurIPS 2025 Workshop).</span>
+                <span class="lang-zh">基于自监督 ViT 特征、通过吸引-排斥上下文分组实现的无监督完整对象分割（NeurIPS 2025 Workshop）。</span></li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2016.03 – 2023.08</div>
+          <div class="timeline-org">KAIST</div>
+          <div class="timeline-role"><span class="lang-en">Graduate Research Assistant</span><span class="lang-zh">研究生助理，GSA</span></div>
+          <p style="margin:0 0 8px;">
+            <span class="lang-en">Research topics: segmentation, detection, GANs, intra-domain adaptation, 3D object motion.</span>
+            <span class="lang-zh">研究课题：Segmentation, Detection, GANs, 域内自适应, 3D Object Motion。</span>
+          </p>
+          <ul>
+            <li><span class="lang-en">Domain-adaptive semantic segmentation using GAN- and diffusion-based synthetic data to close the source/target distribution gap, achieving SOTA across geography and weather conditions.</span>
+                <span class="lang-zh">基于 GAN 与扩散模型构建合成数据，缓解源域与目标域分布差异，在多种地理环境与天气条件下取得当前最优的域自适应语义分割性能。</span></li>
+            <li><span class="lang-en">Geometry-guided learning of 3D object motion and monocular depth from unlabeled video to drive motion-guided adaptive segmentation (MoDA).</span>
+                <span class="lang-zh">基于几何约束的学习框架，从未标注视频中同时学习 3D 物体运动与单目深度，驱动运动引导的自适应分割（MoDA）。</span></li>
+            <li><span class="lang-en">Unsupervised, compound, and multi-target domain adaptation frameworks combining clustering-based domain division, GAN style transfer, masked-autoencoder augmentation, and self-training (IntraDA, ML-BPM, MacDC).</span>
+                <span class="lang-zh">结合聚类域划分、GAN 风格迁移、掩码自编码器增强与自训练的无监督、复合及多目标域自适应分割框架（IntraDA、ML-BPM、MacDC）。</span></li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2021.05 – 2021.11</div>
+          <div class="timeline-org">Robert Bosch</div>
+          <div class="timeline-role"><span class="lang-en">R&amp;D Intern</span><span class="lang-zh">研发实习</span></div>
+          <ul>
+            <li><span class="lang-en">YOLOv5-based vehicle detection across multi-camera traffic intersections; GAN-, LAB color space-, and Fourier-based synthetic augmentation improved cross-camera detection robustness by 20%.</span>
+                <span class="lang-zh">基于 YOLO-v5 的多路交通路口车辆监控检测；结合 GAN、LAB 色彩空间与傅里叶变换的合成数据增强，将跨摄像头检测鲁棒性提升 20%。</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-title"><span class="lang-en">Education</span><span class="lang-zh">教育背景</span></div>
+
+      <div class="edu-item">
+        <div class="edu-degree"><span class="lang-en">Ph.D., Electrical Engineering</span><span class="lang-zh">博士，电子信息工程</span> — KAIST <span class="lang-en">(QS 65)</span><span class="lang-zh">（QS 世界排名 65）</span></div>
+        <div class="edu-meta">2018.03 – 2023.08 · <span class="lang-en">Advisor: Prof. In So Kweon</span><span class="lang-zh">导师：In So Kweon 教授</span></div>
+        <div class="edu-detail">
+          <span class="lang-en">Thesis: Geometric-guided Domain Adaptation for Semantic Segmentation.</span>
+          <span class="lang-zh">博士论文：Geometric-guided Domain Adaptation for Semantic Segmentation。</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-degree"><span class="lang-en">M.S., Electrical Engineering</span><span class="lang-zh">硕士，电子信息工程</span> — KAIST</div>
+        <div class="edu-meta">2016.02 – 2018.02</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-degree"><span class="lang-en">B.Eng., Communication Engineering</span><span class="lang-zh">学士，通信工程</span> — <span class="lang-en">Xidian University</span><span class="lang-zh">西安电子科技大学</span></div>
+        <div class="edu-meta">2011.09 – 2015.07</div>
+        <div class="edu-detail">
+          <span class="lang-en">Ranked 5/825 (top 0.6%) · GPA 3.94/4.0</span>
+          <span class="lang-zh">学院排名 5/825（前 0.6%）· 成绩 3.94/4.0</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-title"><span class="lang-en">Publications</span><span class="lang-zh">发表著作</span></div>
+      <ul class="pub-list">
+
+        <!-- [1] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[1]</span>Unsupervised Whole Object Discovery by Contextual Grouping with Repulsion</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>*, Yixing Wang*, Sangryul Jeon, Stella Yu.</div>
+          <div class="pub-venue">NeurIPS 2025 Workshop.</div>
+          <span class="read-more-text">
+            <span class="lang-en">Existing self-supervised ViT features (e.g., DINO) mainly segment local object parts. This work
+            introduces attraction-and-repulsion cues into a graph-cut framework to refine these features, enabling
+            unsupervised segmentation of complete objects across image and video datasets without any prior
+            knowledge of object categories.</span>
+            <span class="lang-zh">现有的自监督 ViT 特征（如 DINO）主要针对对象局部区域进行分割；本工作在图割框架中引入吸引与排斥机制，
+            进一步优化 ViT 特征，使其能够在图像和视频数据集中实现对完整对象的无监督分割，而无需任何关于对象的先验知识。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [2] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[2]</span>DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation</div>
+          <div class="pub-authors">Sanghyun Jo, <span class="me">Fei Pan</span>, In-Jae Yu, Kyungsu Kim.</div>
+          <div class="pub-venue">ECCV, 2024.</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2404.00380">[pdf]</a><a href="https://github.com/shjo-april/DHR">[code]</a></div>
+        </li>
+
+        <!-- [3] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[3]</span>Fine-grained Background Representation for Weakly Supervised Semantic Segmentation</div>
+          <div class="pub-authors">Xu Yin, Woobin Im, Dongbo Min, Yuchi Huo, <span class="me">Fei Pan</span>, Sung-Eui Yoon.</div>
+          <div class="pub-venue"><span class="lang-en">IEEE Trans. on Circuits and Systems for Video Technology, 2024.</span><span class="lang-zh">IEEE 电路与系统视频技术汇刊，2024。</span></div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2406.15755">[pdf]</a></div>
+        </li>
+
+        <!-- [4] -->
+        <li class="pub-item">
+          <span class="badge badge-award"><span class="lang-en">Best Paper Award</span><span class="lang-zh">最佳论文奖</span></span>
+          <div class="pub-title"><span class="pub-index">[4]</span>MoDA: Leveraging Motion Priors from Videos for Advancing Unsupervised Domain Adaptive Segmentation</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>, Xu Yin, Seokju Lee, Axi Niu, Sungeui Yoon, In So Kweon.</div>
+          <div class="pub-venue">CVPR Workshop <span class="lang-en">(Learning with Limited Labelled Data for Image and Video Understanding)</span><span class="lang-zh">（有限标注数据学习在图像与视频理解中的应用研讨会）</span>, 2024.</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2309.11711.pdf">[pdf]</a><a href="https://github.com/feipanir/MoDA/tree/main">[code]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">We consider a practical UDA setting where the target domain contains sequential
+            video frames. MoDA is a motion-guided domain adaptive segmentation framework that uses self-supervised
+            object motion to learn effective target-domain representations, handling foreground and background
+            domain gaps with different strategies — foreground object discovery and semantic mining guided by
+            instance-level motion, and background adversarial training with a category-specific discriminator. MoDA
+            outperforms prior methods on multiple domain-adaptive image and video segmentation benchmarks and can
+            be combined with existing SOTA approaches for further gains.</span>
+            <span class="lang-zh">我们考虑目标域包含连续视频帧的实际 UDA 场景，设计了运动引导的域自适应分割框架 MoDA，
+            利用自监督物体运动学习有效的目标域表征，分别处理前景与背景的域差异 —— 前景通过实例级运动引导进行对象发现与语义挖掘，
+            背景通过类别特定判别器进行对抗训练。MoDA 在多个域自适应图像与视频分割基准上超越已有方法，并可与现有 SOTA 方法结合以进一步提升性能。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [5] -->
+        <li class="pub-item">
+          <span class="badge badge-highlight"><span class="lang-en">Highlight (Acceptance Rate &lt; 2.0%)</span><span class="lang-zh">Highlight（录用率 &lt; 2.0%）</span></span>
+          <div class="pub-title"><span class="pub-index">[5]</span>ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object</div>
+          <div class="pub-authors">Chenshuang Zhang, <span class="me">Fei Pan</span>, Junmo Kim, In So Kweon, Chengzhi Mao.</div>
+          <div class="pub-venue">CVPR, 2024.</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2403.18775.pdf">[pdf]</a><a href="https://github.com/chenshuang-zhang/imagenet_d">[code &amp; dataset]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">We use diffusion models as a data source to synthesize hard images that
+            benchmark robustness, providing more diversified backgrounds, textures, and materials — with higher
+            synthetic quality — than prior benchmarks such as ImageNet-C/-9 and Stylized ImageNet. ImageNet-D causes
+            a significant accuracy drop across vision models, from standard ResNet classifiers to foundation models
+            like CLIP and MiniGPT-4, reducing accuracy by up to 60%.</span>
+            <span class="lang-zh">我们利用扩散模型作为数据源合成困难图像用于鲁棒性基准测试，相比 ImageNet-C、ImageNet-9、
+            Stylized ImageNet 等以往基准，在背景、纹理和材料上提供了更高的多样性与合成质量。实验表明，ImageNet-D
+            导致从 ResNet 到 CLIP、MiniGPT-4 等大模型的视觉模型准确率显著下降，最高降幅达 60%。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [6] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[6]</span>Zero-shot Building Attribute Extraction from Large-Scale Vision and Language Models</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>, Sangryul Jeon, Brian Wang, Frank Mckenna, Stella Yu.</div>
+          <div class="pub-venue">WACV, 2024.</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2312.12479.pdf">[pdf]</a><a href="https://github.com/BuildingInfoSys/zeroshot_attribute_extraction">[code]</a><a href="https://drive.google.com/file/d/1t8vMpSuvm7KgLj0hKt0I6jxb6gzlYrep/view">[poster]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">We propose a zero-shot workflow for building attribute extraction that uses
+            large-scale vision-language models to reduce reliance on human-annotated data, combining image-level
+            and segment-level captioning with domain vocabularies from structural and civil engineering to
+            semantically match visual and textual representations.</span>
+            <span class="lang-zh">提出一种利用大规模视觉语言模型进行建筑属性提取的零样本工作流，通过图像级与分割级描述结合结构与土木工程领域词汇，
+            实现视觉与文本表征的语义匹配，从而减少对人工标注数据的依赖。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [7] -->
+        <li class="pub-item">
+          <span class="badge badge-nominated"><span class="lang-en">Best Paper Nominated</span><span class="lang-zh">最佳论文提名</span></span>
+          <div class="pub-title"><span class="pub-index">[7]</span>Masking-augmented Collaborative Domain Congregation for Multi-target Domain Adaptation in Semantic Segmentation</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>*, Dong He*, Xu Yin, Chenshuang Zhang, Munchurl Kim.</div>
+          <div class="pub-venue">IEEE Intelligent Vehicles Symposium (IV), 2024.</div>
+          <span class="read-more-text">
+            <span class="lang-en">MacDC handles both style and contextual gaps among multiple target domains through
+            collaborative domain congregation (image- and region-level data mixing) and multi-context masking
+            consistency, learning a single model for multi-target adaptation without multiple networks or
+            distillation.</span>
+            <span class="lang-zh">MacDC 通过协同域聚合（图像级与区域级数据混合）与多上下文掩码一致性，同时处理多个目标域间的风格差异与上下文差异，
+            无需多网络训练或蒸馏即可学习单一模型完成多目标域自适应。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [8] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[8]</span>CCTV-Calib: A Toolbox to Calibrate Surveillance Cameras Around the Globe</div>
+          <div class="pub-authors">Francois Rameau, Jaesung Choe, <span class="me">Fei Pan</span>, Seokju Lee, In So Kweon.</div>
+          <div class="pub-venue"><span class="lang-en">Machine Vision and Applications, 2023.</span><span class="lang-zh">Machine Vision and Applications 期刊，2023。</span></div>
+          <div class="pub-links"><a href="https://github.com/rameau-fr/CCTV-Calib">[code]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">CCTV-Calib is a user-friendly toolbox to calibrate perspective and fisheye
+            surveillance cameras using satellite views, estimating intrinsic/extrinsic parameters and GPS location
+            with an automated keypoint-matching stage, without restrictive structural or semantic assumptions.</span>
+            <span class="lang-zh">CCTV-Calib 是一个基于卫星视图标定透视与鱼眼监控摄像头的易用工具箱，通过自动化关键点匹配估计相机内外参与 GPS 位置，
+            无需依赖限制性的结构或语义假设。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [9] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[9]</span>ML-BPM: Multi-teacher Learning with Bidirectional Photometric Mixing for Open Compound Domain Adaptation in Semantic Segmentation</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>, Sungsu Heo, Seokju Lee, In So Kweon.</div>
+          <div class="pub-venue">ECCV, 2022.</div>
+          <div class="pub-links"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136940228.pdf">[pdf]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">We introduce a multi-teacher framework with automatic domain separation and
+            bidirectional photometric mixing to separately adapt to every target subdomain, followed by adaptive
+            distillation and consistency regularization to train a generalizable student model, achieving SOTA on
+            compound and open-domain segmentation benchmarks.</span>
+            <span class="lang-zh">提出多教师框架，通过自动域划分与双向光度混合分别适配每个目标子域，并结合自适应蒸馏与一致性正则化训练出泛化能力强的学生模型，
+            在复合域与开放域分割基准上取得当前最优性能。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [10] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[10]</span>Attentive and Contrastive Learning for Joint Depth and Motion Field Estimation</div>
+          <div class="pub-authors">Seokju Lee, Francois Rameau, <span class="me">Fei Pan</span>, In So Kweon.</div>
+          <div class="pub-venue">ICCV, 2021.</div>
+          <div class="pub-links"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Lee_Attentive_and_Contrastive_Learning_for_Joint_Depth_and_Motion_Field_ICCV_2021_paper.pdf">[pdf]</a><a href="https://github.com/SeokjuLee/Insta-DM">[code]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">A self-supervised framework for 3D object motion field estimation from monocular
+            videos that disentangles ego-motion and object motion via a two-stage projection pipeline with a
+            dynamics attention module, plus contrastive sample consensus for object motion estimation using weak
+            semantic priors and geometric constraints.</span>
+            <span class="lang-zh">提出自监督单目视频 3D 物体运动场估计框架，通过带动态注意力模块的两阶段投影管线解耦自车运动与物体运动，
+            并结合弱语义先验与几何约束提出对比样本一致性方法估计物体运动。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [11] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[11]</span>Two-phase Pseudo Label Densification for Self-training based Domain Adaptation</div>
+          <div class="pub-authors">Inkyu Shin, Sanghyun Woo, <span class="me">Fei Pan</span>, In So Kweon.</div>
+          <div class="pub-venue">ECCV, 2020.</div>
+          <div class="pub-links"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580528.pdf">[pdf]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">TPLD densifies sparse pseudo labels in self-training UDA via sliding-window vote
+            propagation and confidence-based easy/hard classification, using full pseudo labels for easy samples
+            and adversarial hard-to-easy feature alignment for hard ones, achieving new SOTA when combined with
+            CRST.</span>
+            <span class="lang-zh">TPLD 通过滑动窗口投票传播与基于置信度的难易样本划分来加密自训练 UDA 中稀疏的伪标签，
+            对简单样本使用完整伪标签，对困难样本采用对抗式难易特征对齐，与 CRST 结合后取得新的 SOTA 结果。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [12] -->
+        <li class="pub-item">
+          <span class="badge badge-oral"><span class="lang-en">Oral Presentation (Acceptance Rate &lt; 0.7%)</span><span class="lang-zh">口头报告（录用率 &lt; 0.7%）</span></span>
+          <div class="pub-title"><span class="pub-index">[12]</span>Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision</div>
+          <div class="pub-authors"><span class="me">Fei Pan</span>, Inkyu Shin, Francois Rameau, Seokju Lee, In So Kweon.</div>
+          <div class="pub-venue">CVPR, 2020.</div>
+          <div class="pub-links"><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Pan_Unsupervised_Intra-Domain_Adaptation_for_Semantic_Segmentation_Through_Self-Supervision_CVPR_2020_paper.pdf">[pdf]</a><a href="https://github.com/feipanir/IntraDA">[code]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">A two-step self-supervised domain adaptation approach that minimizes both
+            inter-domain and intra-domain gaps: first adapting source to target, splitting the target into easy/hard
+            subsets by entropy-based ranking, then self-supervised adaptation from easy to hard split.</span>
+            <span class="lang-zh">提出两阶段自监督域自适应方法，同时缩小域间与域内差异：先进行源域到目标域的自适应，
+            基于熵排序将目标域划分为简单/困难两部分，再通过自监督方式由简单向困难部分适应。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [13] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[13]</span>Variational Prototyping-Encoder: One-Shot Learning with Prototypical Images</div>
+          <div class="pub-authors">Junsik Kim, Tae-Hyun Oh, Seokju Lee, <span class="me">Fei Pan</span>, In So Kweon.</div>
+          <div class="pub-venue">CVPR, 2019.</div>
+          <div class="pub-links"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Kim_Variational_Prototyping-Encoder_One-Shot_Learning_With_Prototypical_Images_CVPR_2019_paper.pdf">[pdf]</a><a href="https://github.com/mibastro/VPE">[code]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">VPE tackles open-set graphic-symbol recognition via one-shot classification with
+            prototypical images, learning an image-translation task from real images to prototypes as a meta-task
+            that induces a generalizable embedding space.</span>
+            <span class="lang-zh">VPE 通过以原型图像为单一训练样本的单样本分类，解决开放集图形符号识别问题，
+            以从真实图像到原型图像的翻译任务作为元任务，学习出可泛化的嵌入空间。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+        <!-- [14] -->
+        <li class="pub-item">
+          <div class="pub-title"><span class="pub-index">[14]</span>Driver Drowsiness Detection System Based on Feature Representation Learning Using Various Deep Networks</div>
+          <div class="pub-authors">Sanghyuk Park, <span class="me">Fei Pan</span>, Sunghun Kang, Chang D. Yoo.</div>
+          <div class="pub-venue">ACCV Workshops, 2016.</div>
+          <div class="pub-links"><a href="https://link.springer.com/chapter/10.1007/978-3-319-54526-4_12">[pdf]</a></div>
+          <span class="read-more-text">
+            <span class="lang-en">DDD combines three deep networks for background/environment robustness and local
+            facial-movement and head-gesture recognition, achieving 73.06% detection accuracy on the NTHU drowsy
+            driver benchmark.</span>
+            <span class="lang-zh">DDD 网络融合三个深度网络分别学习环境鲁棒性表征以及面部局部动作与头部姿态特征，
+            在 NTHU 疲劳驾驶检测基准数据集上取得 73.06% 的检测准确率。</span>
+          </span>
+          <span class="read-more-btn"><span class="lang-en">Read More</span><span class="lang-zh">展开摘要</span></span>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="projects">
+      <div class="section-title"><span class="lang-en">Selected Projects</span><span class="lang-zh">软件著作</span></div>
+      <div class="project-grid">
+        <div class="project-item">
+          <div class="project-name">ZoBae — Zero-shot Classification &amp; Segmentation</div>
+          <div class="project-desc">
+            <span class="lang-en">Zero-shot recognition built on large-scale vision-language models, covering classification, detection, segmentation, and captioning without task-specific training data.</span>
+            <span class="lang-zh">基于大规模视觉语言模型的零样本识别工具，涵盖分类、检测、分割与图像描述，无需特定任务训练数据。</span>
+          </div>
+          <a class="project-link" href="https://github.com/feipanir/ZoBae">github.com/feipanir/ZoBae</a>
+        </div>
+        <div class="project-item">
+          <div class="project-name">MoDA — Monocular Depth &amp; Motion</div>
+          <div class="project-desc">
+            <span class="lang-en">Self-supervised framework learning monocular depth, ego-motion, and object motion from unlabeled driving videos via structure-from-motion.</span>
+            <span class="lang-zh">自监督学习框架，基于 Structure from Motion 从无标签驾驶视频中学习单目深度、自车运动与物体运动。</span>
+          </div>
+          <a class="project-link" href="https://github.com/feipanir/MoDA">github.com/feipanir/MoDA</a>
+        </div>
+        <div class="project-item">
+          <div class="project-name">ImageNet-D — Diffusion Robustness Benchmark</div>
+          <div class="project-desc">
+            <span class="lang-en">Diffusion-synthesized objects for evaluating robustness of vision models from ResNet to ViT-based foundation models like CLIP and MiniGPT-4.</span>
+            <span class="lang-zh">基于扩散模型生成合成对象，用于评估从 ResNet 到 CLIP、MiniGPT-4 等 ViT 基础模型的视觉模型鲁棒性。</span>
+          </div>
+          <a class="project-link" href="https://github.com/chenshuang-zhang/imagenet_d">github.com/chenshuang-zhang/imagenet_d</a>
+        </div>
+        <div class="project-item">
+          <div class="project-name">IntraDA — Domain Adaptive Semantic Segmentation</div>
+          <div class="project-desc">
+            <span class="lang-en">Domain-adaptive semantic segmentation framework improving generalization to real-world driving scenes.</span>
+            <span class="lang-zh">具备域自适应能力的语义分割框架，旨在提升模型在真实驾驶场景图像上的泛化能力。</span>
+          </div>
+          <a class="project-link" href="https://github.com/feipanir/IntraDA">github.com/feipanir/IntraDA</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="section-title"><span class="lang-en">Awards &amp; Honors</span><span class="lang-zh">获奖与荣誉</span></div>
+
+      <div class="award-item">
+        <div class="award-date">2024.06</div>
+        <div class="award-body">
+          <b><span class="lang-en">Best Paper Award</span><span class="lang-zh">最佳论文奖</span></b>
+          <p><span class="lang-en">CVPR Workshop on Learning with Limited Labelled Data for Image and Video Understanding.</span>
+             <span class="lang-zh">CVPR「有限标注数据学习在图像与视频理解中的应用」研讨会。</span></p>
+        </div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-date">2020.12</div>
+        <div class="award-body">
+          <b><span class="lang-en">Qualcomm Innovation Fellowship</span><span class="lang-zh">高通公司创新研发奖</span></b>
+          <p><span class="lang-en">Awarded for outstanding research achievements during graduate study in Korea.</span>
+             <span class="lang-zh">因在韩国攻读研究生期间的杰出研究成果而获得。</span></p>
+        </div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-date">2019.09</div>
+        <div class="award-body">
+          <b><span class="lang-en">Robert Bosch Ph.D. Scholarship (2 years)</span><span class="lang-zh">博世博士奖学金（两年）</span></b>
+          <p><span class="lang-en">Supported research on intelligent transportation systems.</span>
+             <span class="lang-zh">支持在智能交通系统方面的创新研究。</span></p>
+        </div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-date">2015.05</div>
+        <div class="award-body">
+          <b><span class="lang-en">Goodix Technology Scholarship</span><span class="lang-zh">汇顶科技奖学金</span></b>
+          <p><span class="lang-en">Outstanding graduate, Xidian University.</span>
+             <span class="lang-zh">西安电子科技大学本科优秀毕业生。</span></p>
+        </div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-date">2014.05</div>
+        <div class="award-body">
+          <b><span class="lang-en">National Scholarship</span><span class="lang-zh">国家奖学金</span></b>
+          <p><span class="lang-en">For outstanding academic performance, Xidian University.</span>
+             <span class="lang-zh">因本科期间的优异学术表现而获得。</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title"><span class="lang-en">Skills</span><span class="lang-zh">技能</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">Caffe</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C / C++</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">SciPy</span>
+        <span class="skill-tag">CNNs</span>
+        <span class="skill-tag">GANs</span>
+        <span class="skill-tag">Diffusion Models</span>
+        <span class="skill-tag">ControlNet</span>
+        <span class="skill-tag">ViTs</span>
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">VLMs</span>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="section-title"><span class="lang-en">Academic Service</span><span class="lang-zh">学术服务</span></div>
+      <ul class="service-list">
+        <li><b><span class="lang-en">Journal Review:</span><span class="lang-zh">期刊审稿：</span></b> TPAMI, CVIU, Neurocomputing, Pattern Recognition Letters</li>
+        <li><b><span class="lang-en">Conference Review:</span><span class="lang-zh">会议审稿：</span></b> CVPR, ICCV, ECCV, NeurIPS, AAAI</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="quote">
+      <span class="lang-en">"The three fundamental problems of computer vision are correspondence, correspondence, and correspondence!" — Takeo Kanade</span>
+      <span class="lang-zh">「计算机视觉的三个根本问题是：对应，对应，还是对应！」—— Takeo Kanade</span>
+    </p>
+    <div class="footer-meta">© 2026 Fei Pan · <span class="lang-en">Hangzhou, China</span><span class="lang-zh">中国 · 杭州</span></div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
