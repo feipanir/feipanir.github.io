@@ -144,7 +144,7 @@ p { margin: 0 0 1em; color: var(--fg-muted); }
 }
 .nav-links a:hover { color: var(--accent); opacity: 1; text-decoration: none; }
 
-.controls { display: flex; gap: 8px; align-items: center; }
+.controls { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
 
 .icon-btn {
   border: 1px solid var(--border);
@@ -404,7 +404,8 @@ footer {
   .hero { flex-direction: column; align-items: center; text-align: center; padding-top: 32px; }
   .contact-line { justify-content: center; }
   .interest-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 12.5px; }
   .award-item { flex-direction: column; gap: 4px; }
   .award-date { width: auto; }
 }
